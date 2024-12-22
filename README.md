@@ -1,25 +1,14 @@
-# Задача
+# Task
 
-Сделать форму создания «тестовой локации».
+Create a "Test Location" form with dropdowns that dynamically filter options based on selected values in other fields, ensuring consistency and relevance
 
-## На входе
+## Demo
 
-Mobx store, который подтягивает данные по локациям, средам и серверам.
+[https://drive.google.com/file/d/12j0FpUZri53IlxOIvnl6zUfqioCQEwoM/view?usp=sharing](https://drive.google.com/file/d/12j0FpUZri53IlxOIvnl6zUfqioCQEwoM/view?usp=sharing)
 
-## На форме:
 
-- Выбор локации;
-- выбор среды (отфильтрованный по локации);
-- доступные серверы через запятую, информационно;
-- поле для ввода подсказки.
+### Install and run
 
-![Примерный макет](https://raw.githubusercontent.com/BATCOH/mp-test/master/todo.png)
-
-## На выходе
-
-По кнопке «Вывести результат в консоль» — массив объектов вида `[{locationID: number, envID: number, hint: string}]`
-
-## Дополнительно
-
-Макет примерный, pixel-perfect не нужен, функционал — в первую очередь.
-Иконки берём с Font Awesome.
+- `git clone https://github.com/woodufx/server-locations-form.git`
+- `npm i`
+- `npm start`
