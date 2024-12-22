@@ -26,9 +26,9 @@ export const ServerLocationsForm = observer(() => {
 
   const handleSaveData = () => {
     const logData = Object.values(store.testLocations).map((test) => ({
-      locationId: test.location.locationID,
-      envId: test.environment.envID,
-      hint: test.hint,
+      locationId: test.location.locationID ?? '',
+      envId: test.environment.envID ?? '',
+      hint: test.hint ?? '',
     }));
 
     console.log(logData);
